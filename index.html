@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among Us 2D</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="game-ui">
+            <div id="task-list" class="ui-element">
+                <h3>Tasks</h3>
+                <ul id="tasks"></ul>
+            </div>
+            <div id="role-indicator" class="ui-element">
+                <h3>Role</h3>
+                <p id="role">Waiting...</p>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="meeting-container" class="hidden">
+            <h2>Emergency Meeting</h2>
+            <div id="voting-area"></div>
+            <button id="skip-vote">Skip Vote</button>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
